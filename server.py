@@ -15,8 +15,6 @@ def receive_data():
     return 'Data received successfully!'
  # API endpoint configuration
 
-api_url = "https://transcribe.whisperapi.com"
-headers = {'Authorization': 'Bearer N6BMD26ZT2NF94CCXH62T7HD7SQR2QDM'}
 def process_data(data):
     data = np.array(data)
     rate = 44100
