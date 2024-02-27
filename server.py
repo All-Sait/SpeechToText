@@ -19,9 +19,9 @@ api_url = "https://transcribe.whisperapi.com"
 headers = {'Authorization': 'Bearer N6BMD26ZT2NF94CCXH62T7HD7SQR2QDM'}
 def process_data(data):
     data = np.array(data)
-    rate = 7200
+    rate = 44100
     max_frequency = 3600
-    between = 1/55
+    between = 1/60
     full_waveform = np.array([])
     for freq_vols in data:
         t = np.linspace(0,between,int(rate*between),endpoint=False)
